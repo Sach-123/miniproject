@@ -1,25 +1,24 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    padding: 0 20px 30px 0;
     line-height: 2;
-	background-color: red;
+
 }
 .flex-container{
     margin-top: 20px;
-    display: flex ;
+    display: flex;
     flex-wrap: nowrap;
     width: 100%;
     height: 500px;
     justify-content: center;
-    transition: 2s all ease;
+
 }
 
 .flex-item{
-    background:cyan;
-    border: 1pt solid black;
+    background:black;
+    border: 1pt solid rgb(192, 36, 127);
     width: 10px;
-    transition: 0.1s all ease;
+
 }
 
 .row{
@@ -30,5 +29,4 @@ body {
 #input{
     display: flex;
     padding: 10px;
-    justify-content: space-around;
 }
