@@ -9,15 +9,17 @@ function swap(el1, el2) {
 
 function disableSortingBtn(){
     document.querySelector(".bubbleSort").disabled = true;
+    document.querySelector(".selectionSort").disabled = true;
 }
 
 function enableSortingBtn(){
     document.querySelector(".bubbleSort").disabled = false;
-
-}
+    document.querySelector(".selectionSort").disabled = false;
+  }
 
 function disableSizeSlider(){
     document.querySelector("#arr_sz").disabled = true;
+    
 }
 
 function enableSizeSlider(){
