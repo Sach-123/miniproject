@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
-    <h1 align="center">Visualization of Sorting Algorithms</h1>
-    <h2 align="center">Sustainable Goal:Undertanding Sorting Algorithms</h2>
-    <h3 align="right">Group:28</h3>
+    <h1 class=" rainbow_text_animated" align="center">Visualization of Sorting Algorithms</h1>
+    <h2  align="center">Sustainable Goal:Undertanding Sorting Algorithms</h2>
+    
     <nav>
         <div class="row">
             <div class="col gap-2 d-sm-flex" id="newArray">
@@ -22,7 +22,8 @@
                     <input id="arr_sz" type="range" min="15" max="100" step=1 >
                 </span>
                 <span id="speed">Speed
-                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 >
+                    <input id="speed_input" type="range" min="10" max="300" stepDown=10 >
+                    <output></output>
                 </span>
 
             </div>
@@ -35,7 +36,7 @@
         </div>
     </nav>
 </header>
-<body style="background-color: lightskyblue;">
+
 <body class="p-3 mb-2  text-dark">
     
     <div id="bars" class="flex-container"></div>
@@ -46,17 +47,23 @@
     <script src="js_files/selection.js"></script>
     <script src="js_files/merge.js"></script>
     <script src="js_files/insertion.js"></script>
-</body>
-<p>
-    <div>1) Bubble Sort: Swaps adjacent elements if they are in the wrong order,the algorithm needs one whole pass without 
-    any swaps to know if the array is sorted.</div>
-    <div>2) Selection Sort:Sort by repeatedly finding minimum element and putting it at the beginning. 
+
+
+
+<div>
+    <p>1) Bubble Sort : Swaps adjacent elements if they are in the wrong order,the algorithm needs one whole pass without 
+    any swaps to know if the array is sorted.</p><br>
+    <p>2) Selection Sort :Sort by repeatedly finding minimum element and putting it at the beginning. 
         It Maintains two arrays:sorted and unsorted arrays.In every iteration,the minimum element
-        is picked and moved to the sorted array</div>
-   <div> 3) Merge Sort:It uses divide and conquer algorithm.Divide input array into two halves,it divides the 
-    input array into two halves and and merges the two halves 
-   </div>
-   <div> 4)Insertion Sort:The algorithm splits the array into sorted and unsorted part,values from the unsorted
-        part are picked and placed at the correct position in the sorted part.</div>
-</p>
+        is picked and moved to the sorted array</p><br>
+   <p> 3) Merge Sort :It uses divide and conquer algorithm.Divide input array into two halves,it divides the 
+    input array into two halves and and merges the two halves </p><br>
+   <p> 4)Insertion Sort :The algorithm splits the array into sorted and unsorted part,values from the unsorted
+        part are picked and placed at the correct position in the sorted part.</p><br>
+        
+</div>
+
+<h3 align="right">Group:28</h3>
+
+</body>
 </html>

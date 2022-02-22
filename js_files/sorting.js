@@ -54,7 +54,7 @@ arraySize.addEventListener('input', function(){
 });
 
 // Default input for waitforme function (260ms)
-let delay = 260;
+let delay = 200;
 
 // Selecting speed slider from DOM
 let delayElement = document.querySelector('#speed_input');

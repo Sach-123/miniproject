@@ -10,11 +10,15 @@ function swap(el1, el2) {
 function disableSortingBtn(){
     document.querySelector(".bubbleSort").disabled = true;
     document.querySelector(".selectionSort").disabled = true;
+    document.querySelector(".mergeSort").disabled = true;
+    document.querySelector(".insertionSort").disabled = true;
 }
 
 function enableSortingBtn(){
     document.querySelector(".bubbleSort").disabled = false;
     document.querySelector(".selectionSort").disabled = false;
+    document.querySelector(".mergeSort").disabled = false;
+    document.querySelector(".insertionSort").disabled = false;
   }
 
 function disableSizeSlider(){
@@ -50,7 +54,7 @@ arraySize.addEventListener('input', function(){
 });
 
 // Default input for waitforme function (260ms)
-let delay = 260;
+let delay = 2;
 
 // Selecting speed slider from DOM
 let delayElement = document.querySelector('#speed_input');
@@ -88,7 +92,7 @@ function createNewArray(noOfBars = 50) {
         bar.style.height = `${array[i]*2}px`;
         bar.classList.add('bar');
         bar.classList.add('flex-item');
-        bar.classList.add(`barNo${i}`);
+        bar.classList.add(`barNo${i }`);
         bars.appendChild(bar);
     }
 }
