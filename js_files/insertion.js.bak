@@ -9,7 +9,7 @@ async function insertion(){
         let key = ele[i].style.height;
         // color
         ele[i].style.background = 'blue';
-
+	
         await waitforme(delay);
 
         while(j >= 0 && (parseInt(ele[j].style.height) > parseInt(key))){
@@ -34,22 +34,10 @@ async function insertion(){
 
 const inSortbtn = document.querySelector(".insertionSort");
 inSortbtn.addEventListener('click', async function(){
-    var timer;
-    var ele=document.getElementById('timer');
-    (function(){
-        var sec=1;
-        timer=setInterval(()=>{
-            ele.innerHTML= 'Timer(s) : 00:' +sec;
-            sec++;
-    
-        },1000)
-    })()
-    
     disableSortingBtn();
     disableSizeSlider();
     disableNewArrayBtn();
     await insertion();
-    clearInterval(timer);
     enableSortingBtn();
     enableSizeSlider();
     enableNewArrayBtn();

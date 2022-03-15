@@ -1,6 +1,5 @@
 async function bubble() {
     console.log('In bubble()');
-    
     const ele = document.querySelectorAll(".bar");
     for(let i = 0; i < ele.length-1; i++){
         console.log('In ith loop');
@@ -19,28 +18,17 @@ async function bubble() {
         ele[ele.length-1-i].style.background = 'white';
     }
     ele[0].style.background = 'white';
-    
 }
 
 const bubSortbtn = document.querySelector(".bubbleSort");
 bubSortbtn.addEventListener('click', async function(){
-    var timer;
-    var ele=document.getElementById('timer');
-    (function(){
-        var sec=1;
-        timer=setInterval(()=>{
-            ele.innerHTML= 'Timer(s) : 00:' +sec;
-            sec++;
-        
-        },1000)
-    })()
-    
     disableSortingBtn();
     disableSizeSlider();
     disableNewArrayBtn();
     await bubble();
-    clearInterval(timer);
     enableSortingBtn();
     enableSizeSlider();
     enableNewArrayBtn();
 });
+
+

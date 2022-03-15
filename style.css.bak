@@ -1,17 +1,20 @@
 body {
+    background-color:lightskyblue ;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    line-height: 2;
+    line-height: 1;
 
 }
- h1 {
+
+h1 {
 	 font-family: "Times New Roman" , serif ;
 	 font-weight: bold;
 	 font-size:3em;
-	 text-shadow: 3px 3px 5px grey;
+	 text-shadow: 3px 3px 5px  grey;
+
 	 
  }
- h2 {color: red;
+ h2 {
 	 font-family: Monospace ,sans-serif;
 	 font-weight: bold;
 
@@ -22,16 +25,16 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow_animation 6s infinite;
-    background-size: 400% 100%;
+    animation: rainbow_animation 2s linear infinite;
+    background-size: 50% 100%;
 }
 
 @keyframes rainbow_animation {
-    0%,100% {
+    0% {
         background-position: 0 0;
     }
 
-    50% {
+    100% {
         background-position: 100% 0;
     }
 }
@@ -42,7 +45,14 @@ h3 {
 	font-family: "Lucida Console", "Courier New", monospace;
 	font-weight: bold ;
 }
+h3:hover {
+    color:mediumspringgreen;
+}
 
+div > p , member_info{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight:bold;
+}
 .flex-container{
     margin-top: 20px;
     display: flex;
@@ -51,6 +61,16 @@ h3 {
     height: 500px;
     justify-content: center;
 
+}
+
+#js_timer{
+    text-align: center;
+}
+#timer{
+    background: rgb(20, 18, 124);
+    color: white;
+    width: 300px;
+    margin:50px auto; 
 }
 
 .flex-item{
@@ -69,4 +89,3 @@ h3 {
     display: flex;
     padding: 10px;
 }
-
