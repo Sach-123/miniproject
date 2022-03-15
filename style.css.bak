@@ -49,7 +49,7 @@ h3:hover {
     color:mediumspringgreen;
 }
 
-div > p , member_info{
+div > p , .member_info{
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight:bold;
 }
