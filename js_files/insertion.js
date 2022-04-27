@@ -17,6 +17,9 @@ async function insertion(){
             // color
             ele[j].style.background = 'blue';
             ele[j + 1].style.height = ele[j].style.height;
+            const temp = ele[j].innerHTML
+            ele[j].innerHTML = ele[j+1].innerHTML
+            ele[j+1].innerHTML = temp
             j--;
 
             await waitforme(delay);

@@ -91,6 +91,12 @@ async function merge(ele, low, mid, high){
     }
 }
 
+const heights =  ele => {
+    ele.forEach(element => {
+        element.innerHTML = parseInt(element.style.height, 10)
+    });
+}
+
 async function mergeSort(ele, l, r){
     console.log('In mergeSort()');
     if(l >= r){
@@ -102,6 +108,8 @@ async function mergeSort(ele, l, r){
     await mergeSort(ele, l, m);
     await mergeSort(ele, m + 1, r);
     await merge(ele, l, m, r);
+    console.log(ele);
+    heights(ele)
 }
 
 const mergeSortbtn = document.querySelector(".mergeSort");

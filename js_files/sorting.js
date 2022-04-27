@@ -2,6 +2,9 @@ function swap(el1, el2) {
     console.log('In swap()');
     
     let temp = el1.style.height;
+    let temp_height = el1.innerText;
+    el1.innerText = el2.innerText ;
+    el2.innerText = temp_height ;
     el1.style.height = el2.style.height;
     el2.style.height = temp;
     
@@ -79,7 +82,7 @@ function createNewArray(noOfBars = 50) {
     // creating an array of random numbers 
     array = [];
     for (let i = 0; i < noOfBars; i++) {
-        array.push(Math.floor(Math.random() * 250) + 1);
+        array.push(Math.floor(Math.random() * 99) + 1);
     }
     console.log(array);
 
@@ -89,10 +92,14 @@ function createNewArray(noOfBars = 50) {
     // create multiple element div using loop and adding class 'bar col'
     for (let i = 0; i < noOfBars; i++) {
         const bar = document.createElement("div");
-        bar.style.height = `${array[i]*2}px`;
+        bar.style.height = `${array[i]}mm`;
         bar.classList.add('bar');
         bar.classList.add('flex-item');
         bar.classList.add(`barNo${i }`);
+        const height = parseInt(bar.style.height, 10)
+        bar.innerHTML = `${height}`
+        bar.style.textAlign = 'center'
+        bar.style.color = `grey`
         bars.appendChild(bar);
     }
 }

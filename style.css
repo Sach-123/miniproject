@@ -7,16 +7,16 @@ body {
 }
 
 h1 {
-     font-family: "Times New Roman" , serif ;
-     font-weight: bold;
-     font-size:3em;
-     text-shadow: 3px 3px 5px  grey;
+	 font-family: "Times New Roman" , serif ;
+	 font-weight: bold;
+	 font-size:3em;
+	 text-shadow: 3px 3px 5px  grey;
 
-     
+	 
  }
  h2 {
-     font-family: Monospace ,sans-serif;
-     font-weight: bold;
+	 font-family: Monospace ,sans-serif;
+	 font-weight: bold;
 
  }
  
@@ -40,10 +40,10 @@ h1 {
 }
 
 h3 {
-    color:  #155115;
-    text-shadow: 2px 2px 3px  #258e25;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-weight: bold ;
+	color:  #155115;
+	text-shadow: 2px 2px 3px  #258e25;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-weight: bold ;
 }
 h3:hover {
     color:mediumspringgreen;
@@ -86,9 +86,10 @@ div > p , .member_info{
 .flex-item{
     background:black;
     border: 1pt solid rgb(192, 36, 127);
-    width: 10px;
+    width: 30px;
 
 }
+
 
 .row{
     display: grid;

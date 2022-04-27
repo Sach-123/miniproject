@@ -1,4 +1,4 @@
-async function bubble() {
+  async function bubble() {
     console.log('In bubble()');
     
     const ele = document.querySelectorAll(".bar");
@@ -17,6 +17,7 @@ async function bubble() {
             ele[j+1].style.background = 'black';
         }
         ele[ele.length-1-i].style.background = 'white';
+        
     }
     ele[0].style.background = 'white';
     
